@@ -1,0 +1,44 @@
+
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ask?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+</head>
+<body>
+
+    <div class="contanier">
+    <div class="square">
+        <h1 class="title">"Herkesin vardır bi sevdiği ama en çok kimi seversen o gider herkesin vardır illa beklediği ama en çok kimi beklersen o gelmez..."</h1>
+    </div>
+      <div class="visitor-counter" id="visitorCounter">
+        <h2>Ziyaretçi Sayısı: <span id="counterValue">Yükleniyor...</span></h2>
+    </div>
+
+    <script>
+        // Sayfa yüklendiğinde çalışacak fonksiyon
+        window.onload = function() {
+            // AJAX isteği oluştur
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "counter.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Ziyaretçi sayısını güncelle
+                    document.getElementById("counterValue").innerText = xhr.responseText;
+                }
+            };
+            xhr.send();  
+        
+    </div> 
+
+
+<footer>
+        <a href=https://vm.tiktok.com/ZMMWVQ8Vm/" target="_blank" rel="noopener noreferrer" title="123"><i class="fab fa-TikTok"></i> Tiktok</a>
+    </footer>
+
+</body> 
+<script src="script.js"></script>
+</html>
